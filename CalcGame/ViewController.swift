@@ -15,6 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // クロージャの練習
 
+    func method() {
+        print("test")
+    }
+        
+    func method1(closure: ((Int) -> Void)) {
+        let value = 10
+        closure(value)
+    }
+    
 }
 
